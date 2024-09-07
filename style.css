@@ -88,6 +88,10 @@ ul {
 
 .parallax {
     /* The image used */
+    	-webkit-background-image:url("images/main.webp");
+	-o-background-image:url("images/main.webp");
+	-moz-background-image:url("images/main.webp");
+	-ms-background-image:url("images/main.webp");
     background-image: url("images/main.webp");
     position: relative;
     /* top: -80px; */
