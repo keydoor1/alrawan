@@ -129,8 +129,43 @@
             </div>
         </nav>
     </div>
-    <img src="images/main.webp" class="img-fluid" id="index" alt="">
-    <!-- ========== End slider ========== -->
+	<style>
+    
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100lvh;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+     <div class="js-wrapper wrapper">
+        <section class="js-slide slide">
+            <img class="img" src="images/main.webp" alt="">
+        </section>
+      </div>    <!-- ========== End slider ========== -->
 
     <!-- ========== Start about ========== -->
     <div id="about" class="container-fluid rounded-bottom-5 bgmain">
