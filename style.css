@@ -1,0 +1,347 @@
+body {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    --maincolor: #54adcf;
+    --white: #ffffff;
+    --darkmaincolor: #0f77a0;
+    --lightcolor: #54adcf;
+    --darklightcolor: #54adcf;
+
+}
+ul {
+    list-style-type: none;
+}
+.secondarybtn {
+    background-color: var(--lightcolor);
+    color: white;
+}
+
+.secondarybtn:hover {
+    background-color: var(--darklightcolor);
+    color: white;
+}
+
+.mainbutton {
+    background-color: var(--maincolor);
+    color: white;
+}
+
+.mainbutton:hover {
+    background-color: var(--darkmaincolor);
+    color: white;
+}
+
+.navbarbutton {
+    border: 0px;
+    background-color: white;
+    padding: auto;
+}
+
+.navbarbutton:hover {
+    border: 0px;
+    font-weight: bold;
+    color: var(--maincolor);
+}
+
+.darkmaincolor {
+    background-color: var(--darkmaincolor);
+    color: white;
+}
+
+.lightmaincolor {
+    color: var(--lightcolor);
+}
+
+.maincolor {
+    color: rgb(255, 255, 255);
+    background-color: var(--maincolor);
+}
+
+.bgmain {
+    color: white;
+    background-color: var(--maincolor);
+}
+
+.maincolor:hover {
+    color: white;
+    background-color: var(--darkmaincolor);
+}
+
+.textmaincolor {
+    color: white;
+    color: var(--maincolor);
+}
+
+.textlight {
+    color: var(--lightcolor);
+}
+
+#project {
+    background-image: url("images/hp2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("images/main.webp");
+    position: relative;
+    /* top: -80px; */
+     margin-bottom: -35px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("images/S1.webp");
+    position: relative;
+    /* top: -80px; */
+    position: relative;
+    z-index: -1;
+    margin-bottom: -50px;
+    margin-top: -50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.trans {
+    opacity: 1;
+    animation: 1s ease-in both;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translate3d(0, -50%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#navbar {
+
+    transition: 0.9s;
+}
+
+#navbar1 {
+
+    transition: 0.9s;
+}
+
+.parallax-section {
+    overflow-y: scroll;
+    /* margin-top: -100px; */
+    scroll-snap-type: y mandatory;
+    background-image: url("/images/hp.jpg");
+
+}
+
+.sticky-menu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--maincolor);
+    color: black;
+
+    .logo {
+        width: 50px;
+    }
+
+    a,
+    button {
+        font-size: 16px;
+        transition: .5s;
+    }
+
+    .navbar {
+        padding: 5px;
+        transition: .5s;
+    }
+
+
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.logo {
+    width: 75px;
+    transition: 0.9s;
+
+}
+
+
+
+
+.typeText::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #feature-text {
+        margin-left: 8px;
+    }
+
+    .input-cursor {
+        display: inline-block;
+        width: 2px;
+        height: 42px;
+        background-color: white;
+        margin-left: 8px;
+        animation: blink .6s linear infinite alternate;
+    }
+}
+
+.topbaricon {
+    color: rgb(137, 137, 137);
+}
+
+.topbaricon:hover {
+    color: var(--maincolor);
+}
+
+.service-icon {
+    font-size: 75px;
+    color: rgb(24, 24, 24);
+
+
+}
+
+.imglarger {
+    width: 100%;
+
+}
+
+.imglarger:hover {
+    width: 125%;
+}
+
+
+#message {
+    margin-bottom: -50px;
+    margin-top: -50px;
+    position: relative;
+    z-index: -1;
+    background-image: url(images/main.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#company {
+
+    position: relative;
+    z-index: -1;
+    background-image: url(images/main2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+#company1 {
+
+    /* position: relative; */
+    /* z-index: -1; */
+    margin-top: -50px;
+    background-image: url(images/main2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.zoom {
+    transition: .9s;
+}
+
+.zoomarea {
+    overflow: hidden;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: var(--maincolor);
+    text-decoration: none;
+    color: white;
+}
+
+#product1 {
+    position: relative;
+    height: 600px;
+    background-image: url(images/p1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#product2 {
+    position: relative;
+    height: 600px;
+    background-image: url(images/p2.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
